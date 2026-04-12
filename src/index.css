@@ -4,22 +4,22 @@
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  --bg: #f0e8d5;
+  --bg: #f9fef9;
   --card: #e1d6c4;
-  --primary: #0a61f4;  /* amber */
-  --secondary: #13b766; /* pink */
-  --accent: #dd2c11;   /* cyan */
-  --text: #0e0a06;
+  --primary: #3ecf40;  /* amber */
+  --secondary: #86b8e1; /* pink */
+  --accent: #6f7edb;   /* cyan */
+  --text: #061806;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #0f172a;
+    --bg: #010401;
     --card: #1e293b;
-    --primary: #f59e0b;  /* amber */
-    --secondary: #ec4899; /* pink */
-    --accent: #22d3ee;   /* cyan */
-    --text: #f1f5f9;
+    --primary: #30c032;  /* amber */
+    --secondary: #1f517a; /* pink */
+    --accent: #24328f;   /* cyan */
+    --text: #e7f9e7;
   }
 }
 
@@ -41,9 +41,7 @@ body {
 h1{
   margin: 0 0;
   padding: 0 0;
-  font-weight: 100;
-  color: white;
-  mix-blend-mode: difference;
+  font-weight: 800;
   letter-spacing: -2px;
 }
 
@@ -51,8 +49,14 @@ h2{
   margin: 0 0;
   padding: 0 0;
   font-weight: 500;
-  color: white;
-  mix-blend-mode: difference;
+  letter-spacing: -2px;
+}
+
+h3{
+  margin: 0 0;
+  padding: 0 0;
+  font-weight: 400;
+  letter-spacing: -1px;
 }
 
 p{
@@ -60,6 +64,7 @@ p{
 }
 
 .header{
+  text-align: center;
   padding-top: 2vh;
   padding-bottom: 2vh;
 }
@@ -71,17 +76,34 @@ p{
 .floating-card{
   padding: 5px;
   width: max-content;
-  background-color: var(--primary);
   font-weight: bold;
   letter-spacing: -1px;
+  background-color: var(--primary);
   box-shadow: 5px 5px 0px var(--accent);
 }
 
 .game-selection{
+}
+
+.game-list{
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5vh;
+  flex-wrap: wrap;
+  justify-items: center;
+}
+
+.game-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1vh;
+  height: 300px;
   padding: 1vh 1vw;
-  height: 80vh;
-  background-color: var(--card);
-  margin: 0 auto;
   border: 3px solid var(--primary);
+  background-color: var(--primary);
   box-shadow: 5px 5px 0px var(--accent);
+  width: 400px;
 }

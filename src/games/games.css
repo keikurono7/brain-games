@@ -1,0 +1,48 @@
+.screen{
+    height: 70%;
+    width: 98%;
+    background-color: var(--bg);
+    border: 2px solid var(--secondary);
+}
+
+.screen button{
+    background-color: var(--secondary);
+    border: none;
+    box-shadow: 2px 2px 0px var(--accent);
+}
+
+.card1{
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card2, .card3, .result{
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card2 img{
+    height: 70%;
+    width: auto;
+}
+
+.card3{
+    flex-direction: column;
+}
+
+.card3 img{
+    height: 70%;
+    width: auto;
+}
+.result img{
+    height: 70%;
+    width: auto;
+}
